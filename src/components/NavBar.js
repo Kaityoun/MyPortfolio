@@ -8,8 +8,6 @@ const NavBar = () => {
             <nav className='flex space-x-4'>
                 <Link href="/">Home</Link>
                 <Link href="/about">About</Link>
-                <Link href="/projects">Projects</Link>
-                <Link href="/articles">Articles</Link>
             </nav>
 
             <div className='absolute inset-x-1/2 transform -translate-x-1/2 flex justify-center'>
@@ -17,11 +15,8 @@ const NavBar = () => {
             </div>
 
             <nav className='flex space-x-4'>
-                <Link href="/" target="_blank">T</Link>
-                <Link href="/" target="_blank">T</Link>
-                <Link href="/" target="_blank">T</Link>
-                <Link href="/" target="_blank">T</Link>
-                <Link href="/" target="_blank">T</Link>
+            <Link href="/projects">Projects</Link>
+            <Link href="/articles">Articles</Link>
             </nav>
         </header>
     );
