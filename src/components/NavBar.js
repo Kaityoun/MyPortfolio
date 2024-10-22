@@ -2,7 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import Logo from './Logo';
 import {useRouter} from 'next/router'
-import { LinkedinIcon, GithubIcon, LinkedInIcon } from './Icons';
+import { GithubIcon, LinkedInIcon } from './Icons';
+import {motion} from "framer-motion"
 
 // CustomLink Component
 const CustomLink = ({ href, title, className = "" }) => {
@@ -37,13 +38,19 @@ const NavBar = () => {
                 <CustomLink href="/projects" title="Projects" className='mx-4' />
                 <CustomLink href="/articles" title="Articles" className='ml-4' />
 
-                <Link href = "/" target = {"_blank"}>
+                <motion.a href = "https://www.linkedin.com/in/kaitlyn-youn/" target = {"_blank"}
+                whileHover={{y:-2}}
+                className="w-6 mr-3"
+                >
                     <LinkedInIcon/>
-                </Link>
+                </motion.a>
                 
-                <Link href = "/" target = {"_blank"}>
+                <motion.a href = "https://github.com/Kaityoun" target = {"_blank"}
+                 whileHover={{y:-2}}
+                className="w-6 mr-3"
+                >
                     <GithubIcon/>
-                </Link>
+                </motion.a>
             </nav>
 
 

@@ -17,7 +17,7 @@ const Logo = () => {
                     }
                 }}
             >
-                <span className='text-xs'>KaitCo</span>  {/* Text size adjustment */}
+                <span className='text-xs'>KaitYo</span>  {/* Text size adjustment */}
             </MotionLink>
         </div>
     );
