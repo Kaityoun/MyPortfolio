@@ -5,6 +5,7 @@ import Layout from '@/components/Layout'
 import Image from 'next/image'
 import profilePic from "../../public/images/profile/bbyme.jpg"
 import Skills from '@/components/Skills'
+import Experience from '@/components/Experience'
 
 const about = () => {
     return(
@@ -29,6 +30,7 @@ const about = () => {
                     </div>
                 </div>
                 <Skills/>
+                <Experience/>
                 </Layout>
             </main>
         
