@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
 import profilePic from "../../public/images/profile/bbyme.jpg"
+import Skills from '@/components/Skills'
 
 const about = () => {
     return(
@@ -27,6 +28,7 @@ const about = () => {
                         <Image src={profilePic} alt="Bby Kaitlyn" className='w-full h-auto rounded 2x1'/>
                     </div>
                 </div>
+                <Skills/>
                 </Layout>
             </main>
         
