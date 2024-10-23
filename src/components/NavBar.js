@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Logo from './Logo';
 import {useRouter} from 'next/router'
-import { GithubIcon, LinkedInIcon } from './Icons';
+import {GithubIcon, LinkedInIcon } from './Icons';
 import {motion} from "framer-motion"
 
 // CustomLink Component
