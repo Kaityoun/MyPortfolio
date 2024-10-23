@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../../public/images/profile/Worm.png";
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import {LinkArrow } from '@/components/Icons';
@@ -21,10 +21,9 @@ export default function Home() {
           </div>
           <div className = 'w-1/2 flex flex-col items-center self-center'>
             <h1></h1>
-            <AnimatedText text = "Turning Vision Into Reality With Code And Design." className='!text-6x1 !text-left'/>
+            <AnimatedText text = "Hello World!" className='!text-6x1 !text-left'/>
             <p className='my-4 text-base font-medium' >
-            As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. 
-            Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+            I’m a computer science student who loves creating immersive experiences. Whether it’s a videogame or user-friendly website, I love finding ways to blend art and technology!
             </p>
             <div className= 'flex items-center self-start mt-2'>
               <Link href="/dummy.pdf" target={"_blank"}
