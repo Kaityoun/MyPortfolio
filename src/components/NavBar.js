@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react'
 import Link from 'next/link';
 import Logo from './Logo';
 import {useRouter} from 'next/router'
-import {GithubIcon, LinkedInIcon } from './Icons';
+import {GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from './Icons';
 import {motion} from "framer-motion"
+import useThemeSwitcher from './hooks/useThemeSwitcher';
 
 // CustomLink Component
 const CustomLink = ({ href, title, className = "" }) => {
@@ -25,6 +26,7 @@ const CustomLink = ({ href, title, className = "" }) => {
 
 // NavBar Component
 const NavBar = () => {
+    const [mode, setmode] = useThemeSwitcher();
     return (
         <header className='
             w-full px-32 py-8 font-medium flex items-center justify-between relative
@@ -51,6 +53,16 @@ const NavBar = () => {
                 >
                     <GithubIcon/>
                 </motion.a>
+
+                <button 
+                onClick = {() => setmode(mode === "light" ? "dark" : "light")}
+                >
+                {
+                    mode === "dark" ?
+                    <SunIcon className = {"fill-dark"} /> 
+                    : <MoonIcon className = {"fill-dark"} />
+                }
+                </button>
             </nav>
 
 
