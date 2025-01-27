@@ -9,7 +9,7 @@ const Logo = () => {
         <div className='flex items-center justify-center'>
             <MotionLink 
                 href="/"  // Valid href prop for the Link component
-                className='w-16 h-16 bg-dark text-light flex items-center justify-center rounded-full text-xs font-semibold'  // Ensure circle shape and text size
+                className='w-16 h-16 bg-dark text-light flex items-center justify-center rounded-full text-xs font-semiboldborder border-solid border-transparent dark:border-light'  // Ensure circle shape and text size
                 whileHover={{
                     scale: 1.2,
                     transition: {
